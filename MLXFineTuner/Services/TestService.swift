@@ -17,7 +17,7 @@ class TestService {
         let errPipe = Pipe()
 
         var args: [String] = [
-            PythonEnvironmentService.shared.pythonPath, "-m", "mlx_lm.generate",
+            PythonEnvironmentService.shared.pythonPath, "-m", "mlx_lm", "generate",
             "--model", modelPath,
         ]
         if let adapterPath, !adapterPath.isEmpty {

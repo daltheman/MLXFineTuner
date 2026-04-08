@@ -16,7 +16,7 @@ class FuseService {
         let errPipe = Pipe()
 
         var args: [String] = [
-            PythonEnvironmentService.shared.pythonPath, "-m", "mlx_lm.fuse",
+            PythonEnvironmentService.shared.pythonPath, "-m", "mlx_lm", "fuse",
             "--model", modelPath,
             "--adapter-path", adapterPath,
             "--save-path", savePath,
