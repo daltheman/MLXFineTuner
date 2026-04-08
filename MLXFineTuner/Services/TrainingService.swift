@@ -1,6 +1,10 @@
 import Foundation
 import Combine
 
+/// Manages an `mlx_lm.lora` subprocess for LoRA fine-tuning.
+///
+/// Publishes log lines and parsed loss points via Combine subjects so the
+/// view model can update the UI in real time.
 @MainActor
 class TrainingService {
     private var process: Process?
@@ -18,6 +22,7 @@ class TrainingService {
         options: .caseInsensitive
     )
 
+    /// Launches the training process with the given configuration.
     func start(config: TrainingConfig) throws {
         let process = Process()
         let outputPipe = Pipe()
@@ -66,6 +71,7 @@ class TrainingService {
         try process.run()
     }
 
+    /// Terminates the running training process and cleans up pipes.
     func stop() {
         process?.terminate()
         cleanup()

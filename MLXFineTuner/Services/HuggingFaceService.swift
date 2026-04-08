@@ -1,5 +1,6 @@
 import Foundation
 
+/// Client for the Hugging Face Hub REST API, supporting model/dataset search and dataset download.
 class HuggingFaceService {
     private let session: URLSession = {
         let cfg = URLSessionConfiguration.default
@@ -9,6 +10,7 @@ class HuggingFaceService {
 
     // MARK: - Search
 
+    /// Searches the Hugging Face Hub for MLX-compatible models, sorted by downloads.
     func searchModels(query: String, mlxCommunityOnly: Bool = true) async throws -> [HFModelResult] {
         var items: [URLQueryItem] = [
             URLQueryItem(name: "limit", value: "40"),
@@ -25,6 +27,7 @@ class HuggingFaceService {
         return try await fetch([HFModelResult].self, path: "models", queryItems: items)
     }
 
+    /// Searches the Hugging Face Hub for datasets, sorted by downloads.
     func searchDatasets(query: String) async throws -> [HFDatasetResult] {
         var items: [URLQueryItem] = [
             URLQueryItem(name: "limit", value: "40"),

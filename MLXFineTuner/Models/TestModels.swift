@@ -1,5 +1,6 @@
 import Foundation
 
+/// Whether the Test tab should load a LoRA adapter on top of a base model or use a standalone fused model.
 enum TestModelSource: String, CaseIterable, Identifiable {
     case loraAdapter = "LoRA Adapter"
     case fusedModel  = "Fused Model"
@@ -7,6 +8,7 @@ enum TestModelSource: String, CaseIterable, Identifiable {
     var id: String { rawValue }
 }
 
+/// A single message in the Test tab's chat interface.
 struct ChatMessage: Identifiable {
     let id = UUID()
     let role: Role
@@ -19,6 +21,7 @@ struct ChatMessage: Identifiable {
     }
 }
 
+/// Performance metrics parsed from `mlx_lm.generate` stderr output after a generation completes.
 struct TestMetrics {
     var promptTokens: Int = 0
     var promptTokensPerSecond: Double = 0

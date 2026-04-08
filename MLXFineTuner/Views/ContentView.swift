@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// The root view containing the four-tab workflow: Setup, Training, Test, and Export.
 struct ContentView: View {
     @StateObject private var viewModel = TrainingViewModel()
 

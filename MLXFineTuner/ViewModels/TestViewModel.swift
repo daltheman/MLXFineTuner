@@ -1,6 +1,8 @@
 import Foundation
 import Combine
 
+/// Manages the Test tab's chat interface, bridging ``TestService`` token streaming
+/// and metrics to the UI.
 @MainActor
 class TestViewModel: ObservableObject {
     @Published var modelSource: TestModelSource = .fusedModel
@@ -49,6 +51,7 @@ class TestViewModel: ObservableObject {
         if self.fusedModelPath.isEmpty { self.fusedModelPath = fusedModelPath }
     }
 
+    /// Sends the current input as a prompt and starts streaming the model's response.
     func send() {
         let text = currentInput.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty, !isGenerating else { return }
@@ -106,11 +109,13 @@ class TestViewModel: ObservableObject {
         }
     }
 
+    /// Terminates the running generation process.
     func stop() {
         service.stop()
         isGenerating = false
     }
 
+    /// Removes all messages and resets metrics.
     func clearChat() {
         messages.removeAll()
         lastMetrics = nil

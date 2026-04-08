@@ -5,6 +5,8 @@ import SwiftUI
 private let kCurrentConfig = "MLXFineTuner.config"
 private let kPresets       = "MLXFineTuner.presets"
 
+/// Orchestrates the training workflow: configuration persistence, preset management,
+/// and bridging ``TrainingService`` output to the UI.
 @MainActor
 class TrainingViewModel: ObservableObject {
     @Published var config: TrainingConfig
@@ -98,6 +100,7 @@ class TrainingViewModel: ObservableObject {
 
     // MARK: - Training
 
+    /// Validates the dataset, resets state, and launches a training run.
     func start() {
         guard !isRunning else { return }
 
@@ -180,6 +183,7 @@ class TrainingViewModel: ObservableObject {
             .count
     }
 
+    /// Stops the running training process and resets metrics collection.
     func stop() {
         service.stop()
         isRunning = false

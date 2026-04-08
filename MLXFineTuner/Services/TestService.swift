@@ -1,6 +1,10 @@
 import Foundation
 import Combine
 
+/// Manages an `mlx_lm.generate` subprocess for interactive model testing.
+///
+/// Streams generated tokens via ``tokenSubject`` and publishes parsed performance
+/// metrics via ``metricsSubject`` when the process terminates.
 @MainActor
 class TestService {
     private var process: Process?
@@ -11,6 +15,7 @@ class TestService {
     let metricsSubject = PassthroughSubject<TestMetrics, Never>()
     var onTermination: (() -> Void)?
 
+    /// Launches a generation subprocess that streams tokens to stdout.
     func generate(modelPath: String, adapterPath: String?, prompt: String, maxTokens: Int) throws {
         let process = Process()
         let outPipe = Pipe()
@@ -64,6 +69,7 @@ class TestService {
         try process.run()
     }
 
+    /// Terminates the running generation process.
     func stop() {
         process?.terminate()
         cleanup()

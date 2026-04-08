@@ -1,5 +1,8 @@
 import Foundation
 
+/// Converts CSV, TXT, and PDF files into the `train.jsonl` / `valid.jsonl` format expected by `mlx_lm`.
+///
+/// Each conversion spawns a Python subprocess that reads the source file and writes JSONL output.
 class DatasetConverterService {
 
     enum OutputFormat: String, CaseIterable, Hashable {

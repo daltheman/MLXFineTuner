@@ -4,6 +4,7 @@ import IOKit
 
 // MARK: - Data model
 
+/// A snapshot of current system resource usage (CPU, memory, GPU).
 struct SystemMetrics {
     var cpuPercent:  Double = 0     // 0–100
     var memUsedGB:   Double = 0

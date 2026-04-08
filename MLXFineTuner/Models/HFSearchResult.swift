@@ -1,5 +1,6 @@
 import Foundation
 
+/// A model entry returned by the Hugging Face Hub search API.
 struct HFModelResult: Identifiable, Decodable {
     let id: String
     let downloads: Int?
@@ -23,6 +24,7 @@ struct HFModelResult: Identifiable, Decodable {
     }
 }
 
+/// A dataset entry returned by the Hugging Face Hub search API.
 struct HFDatasetResult: Identifiable, Decodable {
     let id: String
     let downloads: Int?

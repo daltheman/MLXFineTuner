@@ -1,6 +1,9 @@
 import Foundation
 import Combine
 
+/// Manages an `mlx_lm.fuse` subprocess to merge LoRA adapters into a base model.
+///
+/// Publishes log lines via ``logSubject`` for real-time progress display.
 @MainActor
 class FuseService {
     private var process: Process?
@@ -10,6 +13,7 @@ class FuseService {
     let logSubject = PassthroughSubject<String, Never>()
     var onTermination: (() -> Void)?
 
+    /// Launches the fuse process with the specified paths and options.
     func start(modelPath: String, adapterPath: String, savePath: String, deQuantize: Bool) throws {
         let process = Process()
         let outPipe = Pipe()
@@ -54,6 +58,7 @@ class FuseService {
         try process.run()
     }
 
+    /// Terminates the running fuse process.
     func stop() {
         process?.terminate()
         cleanup()

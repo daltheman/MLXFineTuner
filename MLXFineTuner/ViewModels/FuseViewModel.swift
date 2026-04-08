@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 
+/// Manages the Export tab's fuse workflow, bridging ``FuseService`` to the UI.
 @MainActor
 class FuseViewModel: ObservableObject {
     static var defaultSavePath: String {
@@ -33,6 +34,7 @@ class FuseViewModel: ObservableObject {
         if self.adapterPath.isEmpty { self.adapterPath = adapterPath }
     }
 
+    /// Validates the output path and launches the fuse process.
     func start() {
         guard !isRunning else { return }
 
@@ -67,6 +69,7 @@ class FuseViewModel: ObservableObject {
         }
     }
 
+    /// Terminates the running fuse process.
     func stop() {
         service.stop()
         isRunning = false
