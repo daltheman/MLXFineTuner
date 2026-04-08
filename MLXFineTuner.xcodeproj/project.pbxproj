@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000011 /* MLXFineTunerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000010 /* MLXFineTunerApp.swift */; };
+		AA000013 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000012 /* ContentView.swift */; };
+		AA000015 /* TrainingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000014 /* TrainingConfig.swift */; };
+		AA000017 /* TrainingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000016 /* TrainingService.swift */; };
+		AA000019 /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000018 /* TrainingViewModel.swift */; };
+		AA00001B /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001A /* SetupView.swift */; };
+		AA00001D /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001C /* TrainingView.swift */; };
+		AA000021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000020 /* Assets.xcassets */; };
+		BB000002 /* HFSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000001 /* HFSearchResult.swift */; };
+		BB000004 /* HuggingFaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000003 /* HuggingFaceService.swift */; };
+		BB000006 /* DatasetConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000005 /* DatasetConverterService.swift */; };
+		BB000008 /* ModelSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000007 /* ModelSearchViewModel.swift */; };
+		BB00000A /* DatasetSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000009 /* DatasetSearchViewModel.swift */; };
+		BB00000C /* ModelSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000B /* ModelSearchView.swift */; };
+		BB00000E /* DatasetSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000D /* DatasetSearchView.swift */; };
+		CC000002 /* FuseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000001 /* FuseService.swift */; };
+		CC000004 /* FuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000003 /* FuseViewModel.swift */; };
+		CC000006 /* FuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000005 /* FuseView.swift */; };
+		DD000002 /* PythonEnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD000001 /* PythonEnvironmentService.swift */; };
+		DD000004 /* PythonEnvironmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD000003 /* PythonEnvironmentViewModel.swift */; };
+		EE000002 /* HyperparamSuggestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000001 /* HyperparamSuggestionService.swift */; };
+		EE000004 /* SystemMetricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000003 /* SystemMetricsService.swift */; };
+		FF000002 /* TestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF000001 /* TestModels.swift */; };
+		FF000004 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF000003 /* TestService.swift */; };
+		FF000006 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF000005 /* TestViewModel.swift */; };
+		FF000008 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF000007 /* TestView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000010 /* MLXFineTunerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLXFineTunerApp.swift; sourceTree = "<group>"; };
+		AA000012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000014 /* TrainingConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingConfig.swift; sourceTree = "<group>"; };
+		AA000016 /* TrainingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingService.swift; sourceTree = "<group>"; };
+		AA000018 /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		AA00001A /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		AA00001C /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		AA000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA000022 /* MLXFineTuner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MLXFineTuner.entitlements; sourceTree = "<group>"; };
+		AA000050 /* MLXFineTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLXFineTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB000001 /* HFSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFSearchResult.swift; sourceTree = "<group>"; };
+		BB000003 /* HuggingFaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuggingFaceService.swift; sourceTree = "<group>"; };
+		BB000005 /* DatasetConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetConverterService.swift; sourceTree = "<group>"; };
+		BB000007 /* ModelSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearchViewModel.swift; sourceTree = "<group>"; };
+		BB000009 /* DatasetSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetSearchViewModel.swift; sourceTree = "<group>"; };
+		BB00000B /* ModelSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearchView.swift; sourceTree = "<group>"; };
+		BB00000D /* DatasetSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetSearchView.swift; sourceTree = "<group>"; };
+		CC000001 /* FuseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuseService.swift; sourceTree = "<group>"; };
+		CC000003 /* FuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuseViewModel.swift; sourceTree = "<group>"; };
+		CC000005 /* FuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuseView.swift; sourceTree = "<group>"; };
+		DD000001 /* PythonEnvironmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonEnvironmentService.swift; sourceTree = "<group>"; };
+		DD000003 /* PythonEnvironmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonEnvironmentViewModel.swift; sourceTree = "<group>"; };
+		EE000001 /* HyperparamSuggestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperparamSuggestionService.swift; sourceTree = "<group>"; };
+		EE000003 /* SystemMetricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetricsService.swift; sourceTree = "<group>"; };
+		FF000001 /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
+		FF000003 /* TestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
+		FF000005 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		FF000007 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B97314FDCFA39411CA2CEA = {
+			isa = PBXGroup;
+			children = (
+				AA000060 /* MLXFineTuner */,
+				29B97315FDCFA39411CA2CEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000050 /* MLXFineTuner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000001000000000000001A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA000010 /* MLXFineTunerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA000002000000000000001A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA000014 /* TrainingConfig.swift */,
+				BB000001 /* HFSearchResult.swift */,
+				FF000001 /* TestModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000003000000000000001A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA000016 /* TrainingService.swift */,
+				BB000003 /* HuggingFaceService.swift */,
+				BB000005 /* DatasetConverterService.swift */,
+				CC000001 /* FuseService.swift */,
+				DD000001 /* PythonEnvironmentService.swift */,
+				EE000001 /* HyperparamSuggestionService.swift */,
+				EE000003 /* SystemMetricsService.swift */,
+				FF000003 /* TestService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA000004000000000000001A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA000018 /* TrainingViewModel.swift */,
+				BB000007 /* ModelSearchViewModel.swift */,
+				BB000009 /* DatasetSearchViewModel.swift */,
+				CC000003 /* FuseViewModel.swift */,
+				DD000003 /* PythonEnvironmentViewModel.swift */,
+				FF000005 /* TestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA000005000000000000001A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA000012 /* ContentView.swift */,
+				AA00001A /* SetupView.swift */,
+				AA00001C /* TrainingView.swift */,
+				BB00000B /* ModelSearchView.swift */,
+				BB00000D /* DatasetSearchView.swift */,
+				CC000005 /* FuseView.swift */,
+				FF000007 /* TestView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA000060 /* MLXFineTuner */ = {
+			isa = PBXGroup;
+			children = (
+				AA000001000000000000001A /* App */,
+				AA000002000000000000001A /* Models */,
+				AA000003000000000000001A /* Services */,
+				AA000004000000000000001A /* ViewModels */,
+				AA000005000000000000001A /* Views */,
+				AA000020 /* Assets.xcassets */,
+				AA000022 /* MLXFineTuner.entitlements */,
+			);
+			path = MLXFineTuner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000030 /* MLXFineTuner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000041 /* Build configuration list for PBXNativeTarget "MLXFineTuner" */;
+			buildPhases = (
+				AA000031 /* Sources */,
+				AA000033 /* Frameworks */,
+				AA000032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLXFineTuner;
+			productName = MLXFineTuner;
+			productReference = AA000050 /* MLXFineTuner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					AA000030 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = AA000040 /* Build configuration list for PBXProject "MLXFineTuner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			productRefGroup = 29B97315FDCFA39411CA2CEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000030 /* MLXFineTuner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000021 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000011 /* MLXFineTunerApp.swift in Sources */,
+				AA000013 /* ContentView.swift in Sources */,
+				AA000015 /* TrainingConfig.swift in Sources */,
+				AA000017 /* TrainingService.swift in Sources */,
+				AA000019 /* TrainingViewModel.swift in Sources */,
+				AA00001B /* SetupView.swift in Sources */,
+				AA00001D /* TrainingView.swift in Sources */,
+				BB000002 /* HFSearchResult.swift in Sources */,
+				BB000004 /* HuggingFaceService.swift in Sources */,
+				BB000006 /* DatasetConverterService.swift in Sources */,
+				BB000008 /* ModelSearchViewModel.swift in Sources */,
+				BB00000A /* DatasetSearchViewModel.swift in Sources */,
+				BB00000C /* ModelSearchView.swift in Sources */,
+				BB00000E /* DatasetSearchView.swift in Sources */,
+				CC000002 /* FuseService.swift in Sources */,
+				CC000004 /* FuseViewModel.swift in Sources */,
+				CC000006 /* FuseView.swift in Sources */,
+				DD000002 /* PythonEnvironmentService.swift in Sources */,
+				DD000004 /* PythonEnvironmentViewModel.swift in Sources */,
+				EE000002 /* HyperparamSuggestionService.swift in Sources */,
+				EE000004 /* SystemMetricsService.swift in Sources */,
+				FF000002 /* TestModels.swift in Sources */,
+				FF000004 /* TestService.swift in Sources */,
+				FF000006 /* TestViewModel.swift in Sources */,
+				FF000008 /* TestView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA000042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA000043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA000044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MLXFineTuner/MLXFineTuner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MLXFineTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		AA000045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MLXFineTuner/MLXFineTuner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MLXFineTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000040 /* Build configuration list for PBXProject "MLXFineTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000042 /* Debug */,
+				AA000043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000041 /* Build configuration list for PBXNativeTarget "MLXFineTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000044 /* Debug */,
+				AA000045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
